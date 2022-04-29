@@ -1,8 +1,8 @@
-name: Bagas CI-CD
+name: CI-CD
 
 on: 
   push:
-    branches: [ main ]
+    branches: [ master ]
 jobs:
   build:
     runs-on: ubuntu-latest
