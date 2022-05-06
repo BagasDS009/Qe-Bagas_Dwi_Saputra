@@ -12,6 +12,16 @@ jobs:
       with:
         testFilePath: MiniProjectmantap.jmx
         outputReportsFolder: reports/
+  update:
+    name: Terdapat update rating pada Api 
+    needs: report
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run JMeter Tests Cuz Update ke 1
+      - uses: rbhadti94/apache-jmeter-action@v0.5.0
+        with:
+          testFilePath: MiniProjectmantap.jmx
+          outputReportsFolder: reports/
   # test:
   #    runs-on: ubuntu-latest
   #    steps:
