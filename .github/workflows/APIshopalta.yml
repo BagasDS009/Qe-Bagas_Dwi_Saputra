@@ -2,6 +2,8 @@ name: altashop
 on:
   push:
     branches: [ master ]
+  pull_request:
+    branches: [ master ]
 jobs:
   report:
     runs-on: ubuntu-latest
