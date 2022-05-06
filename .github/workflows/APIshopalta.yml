@@ -19,11 +19,8 @@ jobs:
     needs: report
     runs-on: ubuntu-latest
     steps:
-      - name: Run JMeter Tests Cuz Update ke 1
+      - name: Run JMeter Tests
       - uses: actions/checkout@v3
-        with:
-          testFilePath: MiniProjectmantap.jmx
-          outputReportsFolder: reports/
   # test:
   #    runs-on: ubuntu-latest
   #    steps:
